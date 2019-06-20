@@ -35,7 +35,7 @@ https://wiki.mozilla.org/Installer:Command_Line_Arguments
 
 
 #>
-
+$PSVersionTable.PSVersion
 
 # Step 1
 # Establish the common parameters
