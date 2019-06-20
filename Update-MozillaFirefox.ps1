@@ -1698,6 +1698,7 @@ If ((($after_update_firefoxes | Measure-Object Name).Count) -eq 0) {
     $success = $false
     $empty_line | Out-String
     Write-Warning "More than one instance of Firefox seems to be installed on the system."
+    "C:\Program Files (x86)\Mozilla Firefox\uninstall\helper.exe /S"
     $multiple_firefoxes_after_update = $true
     $empty_line | Out-String
     Return "The most recent non-beta Firefox version is $most_recent_firefox_version. This script tried to update Firefox, but something went wrong with the installation. Instead of updating Firefox this script installed yet another version of Firefox. Currently the versions $($after_update_firefoxes.Version) are installed. Exiting at Step 20."
